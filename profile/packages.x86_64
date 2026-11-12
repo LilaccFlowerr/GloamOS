@@ -50,7 +50,8 @@ less
 lftp
 libfido2
 libusb-compat
-linux
+linux-cachyos
+cachyos-keyring
 linux-firmware
 linux-firmware-marvell
 livecd-sounds
@@ -126,3 +127,7 @@ xdg-utils
 xfsprogs
 xl2tpd
 zsh
+mesa
+vulkan-radeon
+vulkan-intel
+linux-cachyos-nvidia-open

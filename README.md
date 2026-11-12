@@ -17,6 +17,16 @@ Requires `archiso`, plus `qemu-desktop` and `edk2-ovmf` for testing.
 ./run-vm.sh --bios    # same, legacy BIOS
 ```
 
+## Build host setup (once, for the CachyOS repo)
+
+`mkarchiso` verifies packages with the build host's pacman keyring, so trust
+the CachyOS signing key first:
+
+```bash
+sudo pacman-key --recv-keys F3B607488DB35A47 --keyserver keyserver.ubuntu.com
+sudo pacman-key --lsign-key F3B607488DB35A47
+```
+
 ## Layout
 
 | Path | What |
